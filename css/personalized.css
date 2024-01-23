@@ -1,0 +1,214 @@
+/***********
+ Defaults
+************/
+
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	height: auto;
+	line-height: 1.5;
+	letter-spacing: 0.05em;
+	font-size: 16px;
+	background-color: #f0814d;
+	color: #110438;
+}
+h1,h2,h3,p,ol,ul,li,a {
+	font-family: 'Montserrat', sans-serif;
+}
+h1,h2,h3 {
+	font-family: 'Montserrat', sans-serif;
+	color: #110438;
+}
+h2 {
+	font-size: 1.3em;
+}
+h2.section-head {
+	margin-top:3rem;
+	font-size: 2.4rem;
+}
+a {
+	font-weight: bold;
+	color: #20076e;
+	transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+a:hover {
+	color: #5c489c;
+}
+code, pre {
+	background-color: #f7a681;
+	color: #EDEDED;
+	border-radius: 4px;
+	padding: 0 0.25em;
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+img {
+	width: 100%;
+	height: auto;
+}
+section.main {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+	transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+section.subSection {
+	background-color: #f7a681;
+	padding: 2rem;
+	margin-top: 3rem;
+}
+section.subSection h3 {
+	margin-bottom: 0;
+}
+p.copyright {
+	margin: 0 auto;
+	margin-bottom: 0.5em;
+    text-align: center;
+    color: #333333;
+}
+
+/* Breakpoint */
+@media screen and (max-width: 700px) {
+	section.main {
+		margin: 5rem 2rem;
+	}
+}
+
+
+/*********************************** 
+ Pulled styles for atomic examples
+************************************/
+
+/*Atom 1*/
+h2.headline {
+	font-size: 42px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -.005em;
+    font-family: 'DM Serif Display', serif;
+}
+
+/*Atom 2*/
+h3.subhead {
+	font-size: 26px;
+    line-height: 1.10722;
+    font-weight: 400;
+    letter-spacing: .004em;
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    margin-top: 6px;
+}
+
+/*Atom 3*/
+a.icon.icon-after.icon-chevronright {
+	font-size: 18px;
+	line-height: 1.381;
+	font-weight: 400;
+	font-family: 'DM Serif Display', serif;
+    margin-left: -4px;
+    pointer-events: all;
+}
+
+/*Atom 4*/
+figure.unit-image {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+    height: 200px;
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    background-image: url(../imgs/atom4.jpeg);
+}
+
+/*Atom 5*/
+span.globalnav-link-image {
+	font-size: 24px;
+	line-height: 1.2353641176;
+	font-weight: 600;
+	letter-spacing: -.022em;
+	font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+	display: flex;
+	pointer-events: none;
+	white-space: nowrap;
+}
+span.globalnav-link-image svg {
+	fill: currentColor;
+	transform: translateZ(0);
+    height: 44;
+    width: 14;
+}
+
+/*Molecule 1*/
+div.unit-copy-wrapper {
+	padding-top: 55px;
+    text-align: left;
+    position: relative;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    z-index: 4;
+    pointer-events: none;
+    display: block;
+}
+
+/*Molecule 2*/
+div.cta-links {
+	position: relative;
+	z-index: 4;
+	text-decoration: none;
+	display: inline-block;
+    font-size: 21px;
+    line-height: 1.381;
+    font-weight: 400;
+    letter-spacing: .011em;
+    font-family: 'DM Serif Display', serif;
+    margin-top: 0.65em;
+    text-align: left;
+    -webkit-box-direction: normal;
+}
+div.cta-links a.icon.icon-after.icon-chevronright {
+ 	margin-left: 35px;
+}
+div.cta-links a.icon.icon-after.icon-chevronright:first-of-type {
+ 	margin-left: 0;
+}
+
+/*Organism 1*/
+div.unit-wrapper {
+	position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: hidden;
+    background: #200542;
+    padding: 5rem;
+}
+div.unit-wrapper div.unit-image-wrapper {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+div.unit-wrapper div.unit-copy-wrapper {
+	margin-bottom: 3rem;
+}
+div.unit-wrapper h2.headline {
+	color: #f7f0da;
+}
+div.unit-wrapper h3.subhead {
+	color: #f7f0da;
+}
+div.unit-wrapper a.icon.icon-after.icon-chevronright {
+	color: #f5d25f;
+}
+div.unit-wrapper figure.unit-image {
+	opacity: 0.8;
+}
